@@ -23,7 +23,8 @@ public class ArticleService {
         this.articleRepository.save(article);
         return article;
     }
-    public Article getArticle (Integer id) {
+
+    public Article getArticle(Integer id) {
         Article article = this.articleRepository.getById(id);
         return article;
     }
